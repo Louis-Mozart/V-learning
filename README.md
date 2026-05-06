@@ -4,6 +4,9 @@
 
 # VoCel Value-oriented Class Expression Learning
 
+> **Acknowledgement** — This project is built upon the open-source framework [Ontolearn](https://github.com/dice-group/Ontolearn).  
+> We sincerely thank the Ontolearn development team for their excellent and highly readable codebase, which made this work possible.
+
 > **VoCel-BS** and **VoCel-DR** are concept-learning algorithms that use a lightweight offline-trained **V-Network** to guide beam search, dramatically reducing the number of concepts explored while maintaining solution quality.
 
 ---
@@ -35,10 +38,11 @@ Uses `DrillVNet_Complex` (~92K parameters, ×55 smaller than Drill's `DrillNet`)
 ```shell
 git clone https://github.com/dice-group/Ontolearn.git
 conda create -n venv python=3.10.14 --no-default-packages && conda activate venv && pip install -e .
-# Download knowledge graphs and learning problems
-wget https://files.dice-research.org/projects/Ontolearn/KGs.zip -O ./KGs.zip && unzip KGs.zip
-wget https://files.dice-research.org/projects/Ontolearn/LPs.zip -O ./LPs.zip && unzip LPs.zip
+# Unzip knowledge graphs and learning problems
+unzip KGs.zip && unzip LPs.zip
 ```
+
+Other datasets can be downloaded from [here](https://drive.google.com/file/d/1LWmrtVQFh2_9eWOUsGZTGVeTkxi3n5pk/view?usp=sharing)
 
 ---
 
