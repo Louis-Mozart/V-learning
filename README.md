@@ -10,10 +10,12 @@
 > **VoCel-BS** and **VoCel-DR** are concept-learning algorithms that use a lightweight offline-trained **V-Network** to guide beam search, dramatically reducing the number of concepts explored while maintaining solution quality.
 
 ---
+## Appendix
+The appendix of the paper with further details regarding the evaluation strategy, target construction, etc., can be found [here](https://github.com/Louis-Mozart/V-learning/blob/main/2027_WWW_VLearningAppendix.pdf) 
 
 ## Conceptual Overview
 
-The figure below illustrates the key difference between standard neural concept learners (e.g. Drill) and our V-Net guided approach.  
+The figure below illustrates the key difference between standard neural concept learners (e.g. Drill) and our V-Net-guided approach.  
 Standard learners evaluate *every* refinement; our V-Net scores candidates *before* evaluation and skips dead-end branches.
 
 ![V-Net conceptual diagram](results_loss_curve/V_learning.drawio_1.png)
